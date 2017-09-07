@@ -27,7 +27,8 @@ For manual tests, update ``setup.py`` to a new version like
 ``version="1.4.4.c13"`` then run ``python setup.py sdist`` to create the python
 source package in the 'dist/' folder.
 
-With this package, manually install it into the repo to test.
+With this package, manually install it into the ``build-*`` folder in the
+repo to test.
 For example to test ``scame`` in the ``server`` repo:
 
 ```
@@ -39,6 +40,9 @@ paver lint --all
 
 `paver lint` by default will only check the files changed since master so you
 need the `--all` flag to recheck even the files which were not change.
+
+For ``docutils`` you will need to access the HTML build of the documentation
+from the actual ``build-*`` folder.
 
 
 Updating the package
